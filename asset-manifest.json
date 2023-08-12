@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-deploy/static/css/main.4d9ac453.chunk.css",
-    "main.js": "/react-deploy/static/js/main.28d5f64b.chunk.js",
-    "main.js.map": "/react-deploy/static/js/main.28d5f64b.chunk.js.map",
+    "main.js": "/react-deploy/static/js/main.ce9f56c4.chunk.js",
+    "main.js.map": "/react-deploy/static/js/main.ce9f56c4.chunk.js.map",
     "runtime-main.js": "/react-deploy/static/js/runtime-main.8f7cc944.js",
     "runtime-main.js.map": "/react-deploy/static/js/runtime-main.8f7cc944.js.map",
     "static/css/2.93333abf.chunk.css": "/react-deploy/static/css/2.93333abf.chunk.css",
@@ -49,7 +49,6 @@
     "static/media/dart.30bf58d8.svg": "/react-deploy/static/media/dart.30bf58d8.svg",
     "static/media/deno.96d4a63d.svg": "/react-deploy/static/media/deno.96d4a63d.svg",
     "static/media/django.d51a8aa4.svg": "/react-deploy/static/media/django.d51a8aa4.svg",
-    "static/media/docker.a6221ab3.svg": "/react-deploy/static/media/docker.a6221ab3.svg",
     "static/media/eduBlack.ffbd9a23.svg": "/react-deploy/static/media/eduBlack.ffbd9a23.svg",
     "static/media/eduBlue.85730043.svg": "/react-deploy/static/media/eduBlue.85730043.svg",
     "static/media/eduGreen.7d2ee272.svg": "/react-deploy/static/media/eduGreen.7d2ee272.svg",
@@ -157,6 +156,6 @@
     "static/css/2.93333abf.chunk.css",
     "static/js/2.b22c3ab3.chunk.js",
     "static/css/main.4d9ac453.chunk.css",
-    "static/js/main.28d5f64b.chunk.js"
+    "static/js/main.ce9f56c4.chunk.js"
   ]
 }
