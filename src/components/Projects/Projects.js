@@ -16,7 +16,7 @@ function Projects() {
     
     const useStyles = makeStyles(() => ({
         viewAllBtn : {
-            color: theme.tertiary, 
+            color: theme.secondary, 
             backgroundColor: theme.primary,
             transition: 'color 0.2s',
             "&:hover": {
@@ -25,7 +25,7 @@ function Projects() {
             }
         },
         viewArr : {
-            color: theme.tertiary, 
+            color: theme.secondary, 
             backgroundColor: theme.secondary70,
             width: '40px',
             height: '40px',
@@ -67,7 +67,7 @@ function Projects() {
                             ))}
                         </div> 
 
-                        {projectsData.length > 3 && (
+                        {/* {projectsData.length > 3 && (
                             <div className="projects--viewAll">
                                 <Link to="/projects">
                                     <button className={classes.viewAllBtn}>
@@ -76,7 +76,7 @@ function Projects() {
                                     </button>
                                 </Link>
                             </div>
-                        )}
+                        )} */}
                     </div>
                 </div>
             )}
