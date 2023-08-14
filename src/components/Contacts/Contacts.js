@@ -1,8 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
-import axios from 'axios';
-import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
 import {
     // FaTwitter,
@@ -176,31 +174,6 @@ function Contacts() {
     //     // }
     // };
 
-    const handleContactForm = async (e) => {
-        e.preventDefault();
-    
-        // try {
-        //   const response = await fetch("https://formsubmit.co/sowmya.iyer18@gmail.com", {
-        //     method: "POST",
-        //     body: new FormData(e.target),
-        //   });
-    
-        //   if (response.ok) {
-        //     console.log('Form submitted successfully');
-        //     setSuccess(true);
-        //     setName('');
-        //     setEmail('');
-        //     setMessage('');
-        //   } else {
-        //     console.error('Form submission failed');
-        //     setSuccess(false);
-        //   }
-        // } catch (error) {
-        //   console.error('Form submission error:', error);
-        //   setSuccess(false);
-        // }
-      };
-
     return (
         <div
             className='contacts'
@@ -218,6 +191,7 @@ function Contacts() {
                                     Name
                                 </label>
                                 <input
+                                    required
                                     placeholder='John Doe'
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
@@ -234,6 +208,7 @@ function Contacts() {
                                     Email
                                 </label>
                                 <input
+                                    required
                                     placeholder='John@doe.com'
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
@@ -250,6 +225,7 @@ function Contacts() {
                                     Message
                                 </label>
                                 <textarea
+                                    required
                                     placeholder='Type your message....'
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
