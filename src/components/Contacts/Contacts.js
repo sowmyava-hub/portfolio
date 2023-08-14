@@ -44,9 +44,6 @@ function Contacts() {
 
         setOpen(false);
     };
-    const handleClick = () => {
-        console.log('Button clicked!');
-      };
       
 
     const useStyles = makeStyles((t) => ({
@@ -131,36 +128,78 @@ function Contacts() {
 
     const classes = useStyles();
 
-    const handleContactForm = (e) => {
+    // const handleContactForm = async(event) => {
+    //     event.preventDefault();
+    //     try {
+    //         const response = await fetch("https://formsubmit.co/iyer.sowmya18@gmail.com", {
+    //           method: "POST",
+    //         });
+
+    //         if (response.ok) {
+
+    //           } else {
+    //             console.error('Form submission failed');
+    //             setErrMsg('Invalid email');
+    //             setOpen(true);
+    //             // Handle failed submission, set error message, etc.
+    //           }
+    //         } catch (error) {
+    //           console.error('Form submission error:', error);
+    //           // Handle any errors, set error message, etc.
+    //         }
+
+    //     // if (name && email && message) {
+    //     //     if (isEmail(email)) {
+    //     //         const responseData = {
+    //     //             name: name,
+    //     //             email: email,
+    //     //             message: message,
+    //     //         };
+
+    //     //         axios.post(contactsData.sheetAPI, responseData).then((res) => {
+    //     //             console.log('success');
+    //     //             setSuccess(true);
+    //     //             setErrMsg('');
+
+    //     //             setName('');
+    //     //             setEmail('');
+    //     //             setMessage('');
+    //     //             setOpen(false);
+    //     //         });
+    //     //     } else {
+    //     //         setErrMsg('Invalid email');
+    //     //         setOpen(true);
+    //     //     }
+    //     // } else {
+    //     //     setErrMsg('Enter all the fields');
+    //     //     setOpen(true);
+    //     // }
+    // };
+
+    const handleContactForm = async (e) => {
         e.preventDefault();
-
-        if (name && email && message) {
-            if (isEmail(email)) {
-                const responseData = {
-                    name: name,
-                    email: email,
-                    message: message,
-                };
-
-                axios.post(contactsData.sheetAPI, responseData).then((res) => {
-                    console.log('success');
-                    setSuccess(true);
-                    setErrMsg('');
-
-                    setName('');
-                    setEmail('');
-                    setMessage('');
-                    setOpen(false);
-                });
-            } else {
-                setErrMsg('Invalid email');
-                setOpen(true);
-            }
-        } else {
-            setErrMsg('Enter all the fields');
-            setOpen(true);
-        }
-    };
+    
+        // try {
+        //   const response = await fetch("https://formsubmit.co/sowmya.iyer18@gmail.com", {
+        //     method: "POST",
+        //     body: new FormData(e.target),
+        //   });
+    
+        //   if (response.ok) {
+        //     console.log('Form submitted successfully');
+        //     setSuccess(true);
+        //     setName('');
+        //     setEmail('');
+        //     setMessage('');
+        //   } else {
+        //     console.error('Form submission failed');
+        //     setSuccess(false);
+        //   }
+        // } catch (error) {
+        //   console.error('Form submission error:', error);
+        //   setSuccess(false);
+        // }
+      };
 
     return (
         <div
@@ -172,9 +211,10 @@ function Contacts() {
                 <h1 style={{ color: theme.primary }}>Contacts</h1>
                 <div className='contacts-body'>
                     <div className='contacts-form'>
-                        <form onSubmit={handleContactForm}>
+                        <form method="POST" action="https://formsubmit.co/iyer.sowmya18@gmail.com">
                             <div className='input-container'>
-                                <label htmlFor='Name' className={classes.label}>
+                            <input type="hidden" name="_captcha" value="false"/>
+                               <label htmlFor='Name' className={classes.label}>
                                     Name
                                 </label>
                                 <input
@@ -223,7 +263,6 @@ function Contacts() {
                                 <button
                                     type='submit'
                                     className={classes.submitBtn}
-                                    onClick={handleClick}
                                 >
                                     <p>{!success ? 'Send' : 'Sent'}</p>
                                     <div className='submit-icon'>
