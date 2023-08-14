@@ -211,7 +211,7 @@ function Contacts() {
                 <h1 style={{ color: theme.primary }}>Contacts</h1>
                 <div className='contacts-body'>
                     <div className='contacts-form'>
-                        <form method="POST" action="https://formsubmit.co/iyer.sowmya18@gmail.com">
+                        <form method="POST" action="https://formsubmit.co/2a219a5774ad759a2b5e0206c1ee73b9">
                             <div className='input-container'>
                             <input type="hidden" name="_captcha" value="false"/>
                                <label htmlFor='Name' className={classes.label}>
