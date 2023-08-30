@@ -18,7 +18,6 @@ function Main() {
             <Skills />
             <Experience />
             <Projects />
-            <Achievement />
             <Contacts />
             <Footer />
         </div>
