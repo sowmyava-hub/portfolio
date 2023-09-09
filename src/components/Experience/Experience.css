@@ -123,7 +123,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .experience-description > h1{
         font-size: 3rem;
         margin-bottom: 2rem;
@@ -160,13 +160,13 @@
         font-size: 1.05rem;
         line-height: 126%;
     }
-}
+} */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .experience-description > h1{
         font-size: 2.5rem;
     }
-}
+} */
 
 @media screen and (max-width: 400px) {
 
