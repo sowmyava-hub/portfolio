@@ -185,7 +185,7 @@ function Contacts() {
                 <div className='contacts-body'>
                     <div className='contacts-form'>
                         <form method="POST" action="https://formsubmit.co/2a219a5774ad759a2b5e0206c1ee73b9">
-                        <input type="hidden" name="_next" value="https://sowmyava-hub.github.io/react-deploy/#/"></input>
+                        <input type="hidden" name="_next" value="https://sowmyava-hub.github.io/portfolio/#/"></input>
                             <div className='input-container'>
                             <input type="hidden" name="_captcha" value="false"/>
                                <label htmlFor='Name' className={classes.label}>
