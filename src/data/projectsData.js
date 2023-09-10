@@ -29,9 +29,9 @@ export const projectsData = [
     },
     {
         id: 3,
-        projectName: 'Weather App',
-        projectDesc: 'Weather forecast systems and applications predict weather conditions based on multiple parameters.',
-        tags: ['Django', 'CSS', 'Material Ui'],
+        projectName: 'Portfolio Website',
+        projectDesc: 'This project is a personal portfolio Website.',
+        tags: ['HTML', 'CSS', 'JavaScript', 'React'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         image: three
