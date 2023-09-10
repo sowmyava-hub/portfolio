@@ -121,7 +121,7 @@ function Navbar() {
                 <h1 style={{ color: theme.secondary }}>
                     {shortname(headerData.name)}
                 </h1>
-
+                <div className='navbar--container-btn'>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <NavLink
                                 to='/'
@@ -197,7 +197,8 @@ function Navbar() {
                                 </div>
                             </NavLink>
                             
-                            
+                         
+                    </div>
                     </div>
             </div>
         </div>

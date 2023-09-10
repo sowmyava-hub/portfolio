@@ -20,21 +20,26 @@
     justify-content: center;
     margin-right: 2rem;
 }
+.experience-main{
+    width: 100%;
+    transition: background-color 200ms ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-start;
+    padding: 0.0rem;
+}
+
 
 .experience-description > h1 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     font-family: var(--primaryFont);
     margin-bottom: 2rem;
 }
 
 .experience-card {
-    display: flex;
-    flex-direction: row;
-    align-items:flex-start;
-    justify-content: flex-start;
-    width: 90%;
-    /* height: 140px; */
-    padding: 1.5rem;
+    
+    padding: 1.0rem;
     border-radius: 20px;
     margin-bottom: 1.5rem;
     transition: background-color 200ms ease-in-out;
@@ -48,6 +53,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    margin-bottom: 0.8rem;
 }
 
 .expcard-img > img {
@@ -56,7 +62,10 @@
 }
 
 .experience-details {
+    padding-top: 0.2rem;
+    padding-bottom: 0.8rem;
     margin-left: 0.6rem;
+    align-items: top;
 }
 
 .experience-details > h6 {
@@ -93,8 +102,11 @@
 }
 
 
+.ul-custom {
+    font-family: var(--primaryFont);
+    font-size: 0.825rem;
 
-
+  }
 
 
 @media (min-width: 992px) and (max-width: 1380px) {
