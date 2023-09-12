@@ -23,8 +23,8 @@ export const projectsData = [
         projectName: 'Attendance Management System',
         projectDesc: 'This project focused on creating a student attendance management system for tracking attendance and generating reports.',
         tags: ['JavaScript', 'Node.js', 'Angular.js', 'SQL',],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        code: 'https://github.com/sowmyava-hub',
+        demo: 'hhttps://github.com/sowmyava-hub',
         image: two
     },
     {
@@ -32,8 +32,8 @@ export const projectsData = [
         projectName: 'Portfolio Website',
         projectDesc: 'This project is a personal portfolio Website.',
         tags: ['HTML', 'CSS', 'JavaScript', 'React'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        code: 'https://github.com/sowmyava-hub/portfolio',
+        demo: 'https://github.com/sowmyava-hub/portfolio',
         image: three
     },
     {
